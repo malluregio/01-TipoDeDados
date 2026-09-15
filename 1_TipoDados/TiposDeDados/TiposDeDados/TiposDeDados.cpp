@@ -55,21 +55,58 @@ int main()
 	cout << "Entrada de Dados" << endl;
 	cout << "================" << endl;
 	string nome = "";
-	int idade = 0;
-	int dias = 0;
-	int horas = 0;
-	int minutos = 0;
+	//int idade = 0;
+	//int dias = 0;
+	//int horas = 0;
+	//int minutos = 0;
 
-	cout << "Digite seu nome: ";
-	cin >> nome;
-	cout << "Digite sua idade: ";
-	cin >> idade;
-	dias = idade * 365;
-	horas = dias * 24;
-	minutos = horas  * 60;
-	cout << "Sua idade em dias e: " << dias << endl;
-	cout << "Sua idade em horas e: " << horas << endl;
-	cout << "Sua idade em minutos e: " << minutos << endl;
+	//cout << "Digite seu nome: ";
+	//cin >> nome;
+	//cout << "Digite sua idade: ";
+	//cin >> idade;
+	//dias = idade * 365;
+	//horas = dias * 24;
+	//minutos = horas  * 60;
+	//cout << "Sua idade em dias e: " << dias << endl;
+	//cout << "Sua idade em horas e: " << horas << endl;
+	//cout << "Sua idade em minutos e: " << minutos << endl;
+
+	//exercicio 2
+
+	int celsius = 0;
+	double fahrenheit = 0;
+	double kelvin = 0;
+
+	cout << "Digite uma temperatura em Celsius" << endl;
+	cin >> celsius;
+	fahrenheit = (celsius * 1.8) + 32;
+	kelvin = celsius + 273.15;
+	cout << celsius << " graus Celcius em Fahrenheit eh: " << fahrenheit << endl;
+	cout << "e em Kelvin eh: " << kelvin << endl;
+
+	//exercicio 3
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	long segundos = 0;
+	long dias = 0;
+	long horas = 0;
+	long minutos = 0;
+	long segundosRestantes = 0;
+
+	cout << "Digite os segundos: ";
+	cin >> segundos;
+	minutos = segundos / 60;
+	horas = minutos / 60;
+	dias = horas / 24;
+	segundosRestantes = segundos % 60;
+
+	cout << "Seus segundos em dias é: " << dias << endl;
+	cout << "Seus segundos em horas é: " << horas << endl;
+	cout << "Seus segundos em minutos é: " << minutos << endl;
+	cout << "Restam " << segundosRestantes << " segundos" << endl;
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
